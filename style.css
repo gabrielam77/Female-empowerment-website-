@@ -1,0 +1,281 @@
+
+header{
+    font-family: serif;
+    font-style: italic;
+    padding: 0px;
+    margin: 0px;
+	/* the next 2 lines stick the header to the top*/
+	position: sticky;
+	top: 0px;
+    background-color: #FFC0CB;
+}
+
+.navbar ul{
+	/*put the list of links in the middle*/
+	text-align: center;
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+	text-align: center;
+	font-size: 25px;
+	/*Removes the default decorations for links*/
+	text-decoration: none;
+	/*turns the letters into big letters*/
+	text-transform: uppercase;
+	/*Makes every link a block*/
+    display: block;
+	/*makes the links bolder*/
+	font-weight: bold;
+	color: white;
+	width: 200px;
+	padding: 25px 20px;
+}
+.navbar a:hover{
+	/*colors the background of the link that is clicked*/
+    background-color: hsl(0, 0%, 10%);
+}
+.navbar li{
+	/*Put the links in one line and create a block for each one*/
+	display: inline-block;
+}
+body{
+	text-align: center;
+	font-size: 25px;
+	font-family: sans-serif;
+	background-color:#FFC0CB;
+	margin: 0px;
+    padding: 0px;
+}
+/*style the introduction of evry page with a color, italic font and border*/
+.subject{
+    font-family: serif;
+    font-style: italic;
+    background-color: #fcafbc;
+    color:  rgb(175, 76, 76);
+    border: none 3px rgb(175, 97, 97);
+    padding: 50px;
+    margin: 100px;
+}
+.subject a{
+   /*Removes the default decorations for links*/
+	text-decoration: none;
+	/*turns the letters into big letters*/
+	text-transform: uppercase;
+	font-weight: bold;
+    /*make a bottom line under the link */
+    border-bottom: 3px solid rgb(175, 97, 97);
+	color: rgb(175, 97, 97);
+} 
+/*list in the subject (index.html)*/
+.subject ul{
+    list-style-type: none;
+    background-color: #fbc5ce;
+    padding: 10px;
+    margin-left:250px;
+    margin-right: 250px;
+    /*it make a shadow*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*Animation definition*/
+    animation-name: slideUp;
+    animation-duration: 2s;
+}
+/*make the annimation*/
+@keyframes slideUp{
+    from{transform: translateY(150%)}
+}
+.subject a:hover{
+	/*colors the link that is clicked*/
+    color:rgb(176, 62, 62);
+}
+/*style the external links of the home page*/
+.indexlinks a{
+	text-align: center;
+	font-size: 40px;
+	/*Removes the default decorations for links*/
+	text-decoration: none;
+	/*turns the letters into uppercase*/
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	width: 200px;
+	padding: 25px 25px;
+}
+.indexlinks a:hover{
+	/*colors the link that is clicked*/
+    color:#FFC0CB;
+}
+
+/*the next sections are about the main homepage links*/
+.home .books .youtubers .quotes .about{
+    /*here i styled the color size and boldness of the links*/
+    color: white;
+    font-size:x-large;
+    font-weight: bold;
+}
+.home{
+    background-image: url(picone.jpeg);
+    /*covers the entire background with the picture*/
+    background-size: cover;
+    background-position: center;
+    /*make the link in the center*/
+    display: grid;
+    place-content: center;
+    /*Because the element is too small to see the image, the next line adds height to it and becomes a minimum of 500 pixels*/
+    min-height: 500px;
+}
+.books{
+    background-image: url(pictwo.jfif);
+    /*covers the entire background with the picture*/
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+    /*Because the element is too small to see the image, the next line adds height to it and becomes a minimum of 500 pixels*/
+    min-height: 500px;
+}
+.youtubers{
+    background-image: url(picthree.jfif);
+    /*covers the entire background with the picture*/
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+    /*Because the element is too small to see the image, the next line adds height to it and becomes a minimum of 500 pixels*/
+    min-height: 500px;
+}
+.quotes{
+    background-image: url(picfour.jfif);
+    /*covers the entire background with the picture*/
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+    /*Because the element is too small to see the image, the next line adds height to it and becomes a minimum of 500 pixels*/
+    min-height: 500px;
+}
+.about{
+    background-image: url(picfive.jfif);
+    /*covers the entire background with the picture*/
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+    /*Because the element is too small to see the image, the next line adds height to it and becomes a minimum of 500 pixels*/
+    min-height: 500px;
+}
+
+/*make pink background to odd sections(recommendbooks.html , recommendedyoutube.html , about.html)*/ 
+.odd{
+	background-color: white;
+    padding: 20px;
+}
+/*make white background to odd sections(recommendbooks.html , recommendedyoutube.html , about.html)*/
+.even{
+	background-color: #FFC0CB;
+    padding: 20px;
+}
+/*the next lines put the list of links in the middle without style type (about.html)*/
+.odd ul{
+	text-align: center;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+/*all the quotes style refers to the quote page(emprowerment.html)*/
+/*here I styled the letters*/
+.quote1 p, .quote2 p, .quote3 p, .quote4 p, .quote5 p, .quote6 p{
+    color: white;
+    font-size:x-large;
+    font-weight: bold;
+    /* the next line part makes shaddow to the quotes*/
+    text-shadow: 2px 2px 4px black;
+}
+/*here I styled the pictures in every quote*/
+.quote1{
+    background-image: url(blair.jfif);
+    /*covers the entire background with the picture*/
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+    /*Because the element is too small to see the image, the next line adds height to it and becomes a minimum of 500 pixels*/
+    min-height: 500px;
+}
+.quote2{
+    color: white;
+    font-size:x-large;
+    font-weight: bold;
+    background-image: url(audrey.jfif);
+    /*covers the entire background with the picture*/
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+    /*Because the element is too small to see the image, the next line adds height to it and becomes a minimum of 500 pixels*/
+    min-height: 500px;
+}
+.quote3{
+    color: white;
+    font-size:x-large;
+    font-weight: bold;
+    background-image: url(cocoshanel.jfif);
+    /*covers the entire background with the picture*/
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+    /*Because the element is too small to see the image, the next line adds height to it and becomes a minimum of 500 pixels*/
+    min-height: 500px;
+}
+.quote4{
+    color: white;
+    font-size:x-large;
+    font-weight: bold;
+    background-image: url(annadelvey.jpeg);
+    /*covers the entire background with the picture*/
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+    /*Because the element is too small to see the image, the next line adds height to it and becomes a minimum of 500 pixels*/
+    min-height: 500px;
+}
+.quote5{
+    color: white;
+    font-size:x-large;
+    font-weight: bold;
+    background-image: url(melinda.jfif);
+    /*covers the entire background with the picture*/
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+    /*Because the element is too small to see the image, the next line adds height to it and becomes a minimum of 500 pixels*/
+    min-height: 500px;
+}
+.quote6{
+    color: white;
+    font-size:x-large;
+    font-weight: bold;
+    background-image: url(audreyy.jfif);
+    /*covers the entire background with the picture*/
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+    /*Because the element is too small to see the image, the next line adds height to it and becomes a minimum of 500 pixels*/
+    min-height: 500px;
+    min-height: 500px;
+}
+
+/*next part styling the footer, it style the text alighn, color */
+.footerr{
+    text-align: left;
+    color: rgb(175, 97, 97);
+    background-color: #ff9eae;
+    padding: 20px;
+}
